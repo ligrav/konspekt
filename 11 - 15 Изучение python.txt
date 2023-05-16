@@ -1,0 +1,40 @@
+11.1 bool 
+12.1 Конвертация типов
+		моменты, когда питон преобразует сам ЭТО МАГИЧЕСКИЕ МЕТОДЫ	
+		
+		int_num = 5
+		float_num = 4.5
+
+		print(int_num + float_num)  # 9.5
+
+		bool_val = True
+		int_val = 7
+
+		print(bool_val + int_val)  # 8 питон переконвертировал булиевый тип в 1
+		еще пример
+		print(int_num.__add__(float_num))  # NotImplemented
+		print(int_num.__radd__(float_num))  # NotImplemented
+		print(float_num.__radd__(int_num))  # 9.5
+		
+		######################################################################
+		
+		int_num = 50
+		float_num = 7.5
+		str_val = 'abc'
+		print(int_num * str_val) # 50 * abc abcabcabcabcabcabcab...
+		print(int_num.__mul__(float_num)) # NotImplemented
+		print(float_num.__rmul__(int_num)) #  375.0
+		
+12.3 	Показывает как показывать все магические методы 
+		показывает как работает help 
+		print(help(list))
+		print(help(listю__eq__))
+		print(help(bool))
+		Показывает документацию на обьект
+
+13.1	Списки
+		user_input = [True, 'hi', '11', 10.5] # в списках может быть что угодно
+		print(len(user_input)) # 4 это его длина
+		print(user_input[2]) # 11
+		user_input[2] = 333
+		print(user_input[2]) # 333
