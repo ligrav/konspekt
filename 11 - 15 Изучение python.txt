@@ -37,4 +37,7 @@
 		print(len(user_input)) # 4 это его длина
 		print(user_input[2]) # 11
 		user_input[2] = 333
-		print(user_input[2]) # 333
+		print(user_input[2]) # 333 меняем элемент в списке
+		del user_input[1] # убираем второй элемент в списке
+		
+		Список, который содержит в себе словарь
