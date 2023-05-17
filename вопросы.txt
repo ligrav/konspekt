@@ -1,3 +1,17 @@
 1 на  ubuntu я   установил 3.11 python, но по умолчанию она не выставляется, надо узнать почему
 2 Интерпритатор, не понял как его очистить и как автозаполнять, но не думаю, что это важно
 3. вырезать строку кода горячая клавиша?
+
+4
+
+my_ratings = [2.5, 5.0]
+other_ratings = [3.7, 4.5, 4.9]
+all_ratings = my_ratings + other_ratings
+print(all_ratings)
+# [2.5, 5.0, 3.7, 4.5, 4.9]
+two_ratings = all_ratings[:2]
+print(two_ratings)  # [2.5, 5.0]
+middle_ratings = all_ratings[1:-1]
+print(middle_ratings)
+
+почему  почему счет не с нуля, когда идет нарезка списка
