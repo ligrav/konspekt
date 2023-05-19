@@ -192,3 +192,92 @@ print(id(other_number))
 	# {'name': 'Bogdan', 'is_instructor': True, 'reviews': []}
 	print(info_deepcopy)
 	# {'name': 'Bogdan', 'is_instructor': True, 'reviews': ['Great course!']} 
+
+###################################
+	Функции
+	def sum(a, b):
+		c = a + b
+		print(c)
+
+	a = 5
+	b = 3
+
+	sum(a, b)  # 8 
+
+	a = 8
+	b = 12
+
+	sum(a, b) # 20
+
+#### Еще вариант ### 
+
+def my_fn(a, b):
+    a = a + 1
+    c = a + b
+    return c
+
+
+num_one = 10
+num_two = 5
+
+res = my_fn(num_one, num_two)
+print(res)  # 16
+print(num_one) # 10  объект не поменялся
+
+
+### Самая короткая функция
+def my_fn():
+    pass
+print(my_fn()) # None
+  
+### Передача изменяемых объектов
+def increase_person_age(person):
+    person['age'] += 1
+    return person
+
+
+person_one = {
+    'name': 'Bob',
+    'age': 21
+}
+
+increase_person_age(person_one)
+print(person_one['age'])  # 22
+
+# избежать изменение внешних объектов с помощью копирования объекта
+def increase_person_age(person):
+    person_copy = person.copy()
+    person_copy['age'] += 1
+    return person_copy
+
+
+person_one = {
+    'name': 'Bob',
+    'age': 21
+}
+
+new_person = increase_person_age(person_one)
+print(new_person['age'])  # 22
+print(person_one['age'])  # 21
+
+# Задача по функции
+# Создать функцию с именем merge_list..., у функции 2 парамента, функция должна объединять два списка 
+# используя zip, конвектировать zip в словарь, и вызвать функцию
+
+def merge_list_to_dict(name, price):
+    zip_nomenklature = zip(name, price)
+    dict_nomenklature = dict(zip_nomenklature)
+    return dict_nomenklature
+
+
+product_1 = 'papers'
+product_2 = 'pen'
+product_3 = 'list'
+name_product = (product_1, product_2, product_3)
+price_product = (100, 210, 180)
+
+name_person = ('jam', 'dizzy', 'ky_kiske')
+pol_person = ('g', 'g', 'm')
+print(merge_list_to_dict(name_product, price_product))
+print(merge_list_to_dict(name_person, pol_person))
+

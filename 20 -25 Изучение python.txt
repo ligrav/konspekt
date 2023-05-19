@@ -1,0 +1,43 @@
+# Если объединить аргументы в кортеж, то аргументов, которые может приянть функция становиться больще
+def sum_nums(*args):  # звездочка объединяет элементы в кортеж
+    print(args)
+    print(type(args))
+    print(args[0])
+    return sum(args)  # складываем элементы кортежа
+
+
+print(sum_nums(2, 3, 7))  # 12
+
+# Позиционные аргументы
+# Позиционные аргументы
+def get_posts_info(name, posts_qty):
+    info = f"{name} wrote {posts_qty} posts" 
+    return info
+
+
+info = get_posts_info('Yakov', 25)
+print(info) # Yakov wrote 25 posts
+
+# объединение аргументов в Dict
+def get_posts_info(**person):
+    print(person)
+    # {'name': 'Yakov', 'posts_qty': 25}
+    print(type(person))
+    info = (
+        f"{person['name']} wrote "
+        f"{person['posts_qty']} posts"
+    )
+    return info
+
+
+info = get_posts_info(name='Yakov', posts_qty=25)
+print(info)  # Yakov wrote25 posts
+
+## если первую программу с кортежем сделать в словаре
+def get_posts_info(**person):
+    info = f"{person['name']} wrote {person['posts_qty']} posts"
+    return info
+
+
+info = get_posts_info(posts_qty=30, name='Yakov')
+print(info)  # Yakov wrote 25 posts
