@@ -129,3 +129,126 @@ my_fn()
 print(a)  # 10
 print(b) # NameError: name 'b' is not defined b не определен
 
+## Цепочка областей видимости
+	
+a = 5
+
+
+def my_fn():
+    def inner_fn():
+        print(a) # 5 если a не определена в функции, то python ищет ее извне
+    inner_fn()
+
+
+my_fn()
+
+# Внутри функции можно создавать глобальные переменные
+
+def my_fn():
+    global a
+    a = 10
+
+
+my_fn()
+
+print(a)  # 10
+
+# второй пример
+
+a = 15
+
+
+def my_fn():
+    global a # он перезаписывает первую глобальную переменую 
+    a = 10
+
+
+my_fn()
+
+print(a)  # 10
+
+# внешние переменые не рекомендуется менять внутри функции, если это не необходимо
+
+# 25 Операторы
+# текстовые операторы
+a = 10
+b = a
+
+c = a + b
+
+print(a is b)  # True смотрит, совпадают ли у них Id
+print(c is a)  # False
+
+# другой пример
+a = [1, 2]
+b = [1, 2]
+
+print(a == b)  # True метод класса, == сравнивает значения
+print(a.__eq__(b)) # True  __eq__ это тоже самое что и ==
+print(id(a) == id(b)) # False
+
+###########################
+ - a # унарный оператор что бы сделать числло отрицательным
+ + b # делает оператор положительным
+ 
+
+my_num = 10
+print(+my_num)  # 10
+
+print(not my_num)#  False показывает что число не отрицательное
+
+
+my_bool = True
+my_bool_2 = False
+print(+my_bool)  # 1
+print(+my_bool_2)  # 0
+
+## операторы in и not in
+my_car = {
+    'brand':  'Toyota',
+    'price': 10_000
+}
+
+print('brand' in my_car)  # True этот ключ есть в словаре
+print('year' in my_car)  # False такого ключа в словаре нет
+print('year' not in my_car)  # True даже не знаю как обьяснить этот простой оператор
+
+# при вычисление операторов, лучше использовать скобки для удобства для себя
+
+		a + ((b * c) / (d - e))
+# В PYTHON есть таблица приоритетов вычисления операторов
+
+# Задача
+
+a = [2, 3]
+b = [2, 3]
+print(a == b)  # True числа в наборах равны
+print(a is b)  # FALSE числа раны, а индификаторы не равны
+# False переписал сравнение с оператором is по другому
+print(id(a) == id(b))
+# проверить есть ли опеределенные элементы используя  оператор in
+print(4 in a) # False
+print(2 in a) # True
+print(3 in a) # True
+
+# Ложные значения
+int 0
+float 0.0
+complex 0j 
+print(bool(0)) # false
+print(bool(0.0)) # false
+print(bool(0j)) # false
+print(bool(None)) # false
+# они были ложными
+# пустые последовательности являются ложными
+dict {}
+list {}
+tuple()
+set()
+range(0)
+str ""
+# отрицание и двойное отрицание
+print(not {}) # True
+print(not not {}) # False
+
+# мне дальit не интересно смотреть 105 5 минута
