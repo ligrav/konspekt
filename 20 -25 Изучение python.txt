@@ -41,3 +41,91 @@ def get_posts_info(**person):
 
 info = get_posts_info(posts_qty=30, name='Yakov')
 print(info)  # Yakov wrote 25 posts
+
+ # Задача  переписать вызов функции merge... что бы в нем использовались аргументы с ключевыми словаре
+21 # C задачей не справился, попробую потом
+
+22 Параменты функции
+# показывает, что можно параметру присвоить значение
+def mult_by_factor(value, multiplier=1):
+    return value * multiplier
+
+
+# 20 значение multiplier=1 не используется, так как там 2
+print(mult_by_factor(10, 2))
+# 5  ошибки нет, потому что  multiplier уже известен
+print(mult_by_factor(5))
+		
+############################ более сложный пример ###############################
+from datetime import date
+
+
+def get_weekday():
+    return date.today().strftime('%A')
+
+
+# вызов функции в параметре
+def create_new_posts(post, weekday=get_weekday()):
+    post_copy = post.copy()
+    post_copy['created_on_weekday'] = weekday
+    return post_copy
+
+
+initial_post = {
+    'id': 243,
+    'author': 'Bogdan',
+}
+
+post_with_weekday = create_new_posts(initial_post)
+
+print(post_with_weekday)
+# {'id': 243, 'author': 'Bogdan', 'created_on_weekday': 'Monday'}
+
+# Колбек функция
+	def other_fn(): # простой пример когда функция вызывается другой функцией
+    #
+    pass
+
+
+def fn_with_callback(callback_fn):
+    callback_fn()
+
+
+fn_with_callback(other_fn)
+
+
+# правила работы с функции
+1. Называть функции исходя из выполняемых задачей
+2. Название функции начинать с глагола
+3. Одна функция должна выполнять одну задачу
+4. Не рекомендуется изменять внешние относительно функции переменные
+
+# Документация функции
+
+def mult_by_factor(value, mult=1):
+	# описание функции, когда пользователь укажет курсором мыши, он увидит описание
+    """Multiplies number by multiplicator""" 
+    return value * mult
+
+
+mult_by_factor(5)
+
+## области видимости
+
+## пример для видимых и невидимых перемен
+
+a = 10
+
+
+def my_fn():
+    a = True
+    b = 15
+    print(a)  # True
+    print(b)  # 15
+
+
+my_fn()
+
+print(a)  # 10
+print(b) # NameError: name 'b' is not defined b не определен
+

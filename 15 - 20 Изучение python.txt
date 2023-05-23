@@ -280,4 +280,5 @@ name_person = ('jam', 'dizzy', 'ky_kiske')
 pol_person = ('g', 'g', 'm')
 print(merge_list_to_dict(name_product, price_product))
 print(merge_list_to_dict(name_person, pol_person))
-
+#{'papers': 100, 'pen': 210, 'list': 180}
+#{'jam': 'g', 'dizzy': 'g', 'ky_kiske': 'm'}
