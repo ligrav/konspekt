@@ -1,1 +1,10 @@
 # Логические операторы
+Not чаще используется в условных инструкциях if 
+если отрицаем правдивое значение, то получаем False
+
+not 10 		# False
+not 0  		# True
+not 'abc'	# False
+not ''		# True
+not True	# False
+not None	# True
