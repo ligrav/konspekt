@@ -1,0 +1,291 @@
+# Обработка ошибок
+
+try:
+	# Выполнение блока кода
+	pass
+except ErrorType:
+	# Этот блок выполняется в случае возникновения ошибок в блоке try 
+	pass
+	
+	###########################################################################3
+
+try:
+	print(10/0)
+pass
+except ZeroDivisionError: # ошибка деления на ноль
+	print("Error ZeroDivisionError!")
+print('Continiue.....')
+
+################################################################################
+
+# Получить информацию об ошибки
+
+try:
+    print(10/0)
+# ZeroDivisionError: division by zero
+    pass
+except ZeroDivisionError as e:  # ошибка деления на ноль
+    print(type(e)) # <class 'ZeroDivisionError'>
+    print(e) # division by zero
+print('Continiue.....')
+
+######################################### Другие типы ошибок ##############################
+try:
+    print('10' / 0)
+except ZeroDivisionError as e:  # отлавливаем ошибку деления на 0
+    print(e)
+except TypeError as e:  # отлавливаем ошибку типа объекта
+    print(e)
+     # unsupported operand type(s) for /: 'str' and 'int'
+
+print('continue')
+
+############################## else и finaly  ###################################
+
+try:
+    print(12 / 4)
+except ZeroDivisionError as e:  # отлавливаем ошибку деления на 0
+    print(e)
+except TypeError as e:  # отлавливаем ошибку типа объекта
+    print(e)
+    # unsupported operand type(s) for /: 'str' and 'int'
+else: 
+    print("There was no error")
+finally: # finally выполняется в любом случае, возникла ошибка или нет
+    print('continue')
+
+################################# отлавливать любой тип ошибки ###############
+
+try:
+    print(10 / 0)
+except Exception as e: # есть возможность сохранить ошибку и посмотреть какая она
+    print(e)  # division by zero 
+    # можно отлавливать любой тип ошибки
+	
+	#### Вариант, который не рекомендуется использовать
+try:
+    print(10 / 0)
+except: # не имеем доступа к ошибки, просто есть ошибка и все
+    print("Some error occurred")
+# Some error occurred 
+
+############################################# создания своего отлова ошибка ##################
+# генерация своих ошибок с помощью метода raise
+def divide_nums(a, b):
+    if b == 0:
+        raise TypeError("Second argument can't be 0") # добавили в typeError проверку на 0
+    return a / b
+
+
+try:
+    divide_nums(10, 0)
+except ZeroDivisionError as e: # лишняя проверка на ошибку, так как эту ошибку обработали
+    print(e)
+except TypeError as e:
+    print(e)  # Second argument can't be 0
+
+print('Continue')
+
+#############################
+Задача
+# неправильный вариант 
+def main_list(**image_info):
+    try:
+        info_dim = (
+
+            f"image {image_info['image_title']} has id {image_info['image_id']}"
+        )
+    except TypeError as e:
+        print(e)
+    return info_dim
+
+
+info = main_list(image_id='5156', image_title='my_cat')
+print(info)
+
+######## Правильный вариант, я смог его решить только с чат gpd  ###############
+
+def main_list(**image_info):
+    try:
+        info_dim = (
+            f"image {image_info['image_title']} has id {image_info['image_id']}"
+        )
+    except KeyError as e:
+        print(f"KeyError: {e}")
+        return None
+    except TypeError as e:
+        print(f"TypeError: {e}")
+        return None
+    return info_dim
+
+info = main_list(image_id='5156', image_title='my_cat')
+
+print(info)
+
+################################################################################################
+
+# 32 Распаковка списков в python ## Аналогично это с кортежем 
+
+my_fruits = ['apple', 'banana', 'lime']
+
+my_apple, my_banana, my_lime = my_fruits # если добавить еще переменную, то будет ошибка
+
+print(my_apple)  # apple
+print(my_banana)  # banana
+print(my_lime)  # lime
+
+## Я переписал этот код с проверкой на ошибку ключа
+
+try:
+    my_fruits = ['banana', 'lime']
+    my_apple, my_banana, my_lime = my_fruits
+    print(my_apple)  # apple
+    print(my_banana)  # banana
+    print(my_lime)  # lime
+except ValueError as e:
+    print(e)
+	
+############## Использование * При распаковке
+
+
+
+
+my_fruits = ['apple', 'banana', 'lime']
+my_apple, *remaining_fruits = my_fruits
+
+print(my_apple)  # apple
+print(remaining_fruits)  # ['banana', 'lime'] class list
+
+############# Распаковка словаря в именованые аргументы
+# пример, но чет пока не доходит
+user_profile = {
+    'name': 'Bogdan',
+    'comments_qty': 23,
+}
+
+
+def user_info(name, comments_qty=0):
+    if not comments_qty:
+        return f"{name} has no comments"
+
+    return f"{name} has {comments_qty} comments"
+
+
+print(user_info(**user_profile))
+## Распаковка списка в позиционные аргументы
+user_data = ['Yakov', 23]
+
+
+def user_info(name, comments_qty):
+    if not comments_qty:
+        return f"{name} has no comments"
+    return f"{name} has {comments_qty} comments"
+
+
+print(user_info(*user_data))
+# Yakov has 23 comments
+# Еще вариант
+my_name, my_comments_qty = user_data
+print(user_info(my_name, my_comments_qty))
+# Yakov has 23 comments
+
+
+## 33 if ######################################################################
+	
+	## Самый первый if 
+my_number = 25
+if my_number > 0:
+    print(my_number, "is positive number")
+	
+	###########################################
+person_info = {
+    'age': 20
+}
+
+if not person_info.get('name'):
+    print("not name")
+
+
+#######################################
+num_one = 10
+num_two = 5.3
+
+if (num_one > 0 and
+    num_two > 0 and
+    isinstance(num_one, int) and
+        isinstance(num_two, int)):
+    print("Both number are ints and positive") # не увидим ничего
+	
+# if eLse
+my_number = 21.5
+
+if type(my_number) is int:
+    print(my_number, "is integer")
+else:
+    print(my_number, "is not an integer")
+######## доп ####
+my_phone = {
+    'price': 200
+}
+
+if my_phone.get('brand'):
+    print("Phone's brand is", my_phone['brand'])
+else:
+    print("There is no phone brand")
+
+#########################################################
+
+# if elif
+
+my_number = -10
+
+if my_number > 0:
+    print(my_number, "is positive number")
+elif my_number < 0:
+    print(my_number, "is negative number") 
+else: 
+    print(my_number, "is zero")
+	
+# if в функциях
+# в функции лучше использовать return чем else 
+def nums_info(a, b):
+    if (type(a) is not int) or (type(b) is not int):
+        return "one argument not int"
+    if a >= b:
+        return f"{a} more or equals {b}"
+    return f"{a} less {b}"
+
+
+print(nums_info(True, 10)) # один из аргументов  не целое число
+print(nums_info(10, 2))  # 10 больше или равно 2
+print(nums_info(4, 15))  # 4 меньше 15
+
+## Задание
+
+
+# Создать функцию route_info которая включает в себя словарь
+# если в словаре есть ключ distance выводим одно сообщение
+# если в словаре есть ключ speed, time то  выводим другое сообщение
+# если ключейц нет, то выводим  No distance info is available
+# проверить со всеми ключами
+# добавить проверку speed and time на целое число
+# последнее задание не получилось, где то ошибся
+def route_info(**my_dict):
+    if my_dict.get('distance'):
+        str_if = "Distance to your destination is <distance>"
+    elif (my_dict.get('speed') and
+          my_dict.get('time')
+          and my_dict.get('speed') is int):
+        str_if = "Distance to your destination is <speed*time>"
+    else:
+        str_if = "No distance info is available"
+    return str_if
+
+
+info = route_info(distance='100m')
+info_speed_time = route_info(speed = 11, time = 60)
+info_pusto = route_info()
+print(info)
+print(info_speed_time)
+print(info_pusto)
+
