@@ -262,7 +262,6 @@ print(nums_info(4, 15))  # 4 меньше 15
 
 ## Задание
 
-
 # Создать функцию route_info которая включает в себя словарь
 # если в словаре есть ключ distance выводим одно сообщение
 # если в словаре есть ключ speed, time то  выводим другое сообщение
@@ -270,12 +269,14 @@ print(nums_info(4, 15))  # 4 меньше 15
 # проверить со всеми ключами
 # добавить проверку speed and time на целое число
 # последнее задание не получилось, где то ошибся
+# последняя получилась проверка на int прошла
 def route_info(**my_dict):
     if my_dict.get('distance'):
         str_if = "Distance to your destination is <distance>"
     elif (my_dict.get('speed') and
           my_dict.get('time')
-          and my_dict.get('speed') is int):
+          and my_dict.get('speed', int)
+          and my_dict.get('time', int)):
         str_if = "Distance to your destination is <speed*time>"
     else:
         str_if = "No distance info is available"
@@ -289,3 +290,90 @@ print(info)
 print(info_speed_time)
 print(info_pusto)
 
+# оператор с тремя операндами
+# Тернарные операторы
+my_number = 21.5
+# все можно  написать в одной строке
+print("is int") if type(my_number) is int else print("is not int")
+# аналогичный вариант в две строки
+if type(my_number) is int:
+    print("is int")
+else:
+    print("is not int")
+
+# другой пример
+
+# send_img(img) if img.get['is_processed'] else process_and_send_img(img)
+
+product_qty = 10
+
+print("in stock" if product_qty > 0 else "out of stock")
+################################################
+
+temp = +24
+
+weather = 'hot' if temp > 18 else "cold"
+print(weather) # hot
+
+# Практика Тернарных операторов
+
+my_img = ('1920', '1080')
+
+print(f"{my_img[0]}x{my_img[1]}") if len(my_img) == 2 else print("Incorrect image format")
+## тот же код
+my_img = ('1920', '1080')
+
+info  = f"{my_img[0]}x{my_img[1]}" if len(
+    my_img) == 2 else "Incorrect image format"
+
+print(info)
+
+#  импользуя if else переписать пример с тем же результатом
+# c помощью тенарного оператора проверить длину строки, если 
+# строка более 20 символов, то пишем string long
+my_img = ('1920', '1080')
+
+info  = f"{my_img[0]}x{my_img[1]}" if len(
+    my_img) == 2 else "Incorrect image format"
+
+print(info)
+
+# изи 
+
+my_img = ('1920', '1080')
+if len(my_img) == 2:
+    info = f"{my_img[0]}x{my_img[1]}"
+    print(info)
+else:
+    print("Incorrect image format")
+
+# задание с длинной строки
+my_str = " Приветсвую вам, я мангалус, и теперь твой город покушал лучшего зерна"
+info = print(my_str) if len(my_str) < 20 else print("string long")
+
+################################## Циклы #################################################
+
+# Циклы 
+# первый пример for in для списка
+
+my_list = [True, 10, 'abc', {}]
+
+for elem in my_list:
+    print(elem)
+
+# for in для кортежей
+# все тоже самое
+video_info = ('1920x1080', True, 27)
+
+for elem in video_info:
+    print(elem)
+    
+# for in для словарей
+
+my_object = {
+    'x': 10,
+    'y': True,
+    'z': 'abc'
+}
+for key in my_object:
+    print(key, my_object[key])
