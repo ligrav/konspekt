@@ -377,3 +377,140 @@ my_object = {
 }
 for key in my_object:
     print(key, my_object[key])
+	
+ #################################№№№ for in для словарей и метод items()####################
+
+my_object = {
+    'x': 10,
+    'y': True
+}
+
+for item in my_object.items(): # в цикле получаем доступ к ключу и к значению
+    key, value = item # распаковка кортежа
+    print(key, value)
+# x 10
+# y True
+
+# ######################### Пример на практике #################################
+
+my_dict = {'id': 324, 'title': 'test'}
+
+for item in my_dict.items():
+   # print(item) # ('id', 324) ('title', 'test') два кортежа
+    key, value = item
+    print(key, value) # id 324 title test распаковка словаря
+
+# еще пример этого цикла
+# k, v - key, value
+for k, v in my_dict.items():
+    print(k, v) # id 324 title test
+	
+	
+#################### for in для наборов ###########################
+
+video_ids = {1435, 4317, 2761, 5721}
+
+for id in video_ids:
+    print(id)
+# 5721
+# 1435
+# 2761
+# 4317
+
+#  можно использовать для строк 
+my_name = 'Yakov'
+
+for char in my_name:
+    print(char)
+# Y
+# a
+# k
+# o
+# v
+# для диапазонов
+for num in range(5):
+    print(num)
+    print(num + 1)
+# 0 # 1
+# 1 # 2
+# 2 # 3
+# 3 # 4
+# 4 # 5
+# диапазоны с шагом
+
+for odd_num in range(3,10, 2):
+    print(odd_num)
+# 3
+# 5
+# 7
+# 9
+
+##################### Задача ############################
+# Задача 1
+# # Создайте функцию dict_to_list
+# # которая будет конвертировать словарь в список кортежей
+# # вернуть список значения типа list 
+
+# # Функция должна принимать словарь, а возвращать список кортежей, в 
+# # каждом кортеже должны быть пары (key, value) из словаря
+
+# # Если значение ключа - целое число, то его нужно умножать на 2
+
+# # перед добавлением в кортеж
+def dict_to_list(**my_dict):
+    for item in my_dict.items():
+        my_list = list(item)
+        print(my_list)
+
+info = dict_to_list(name = 'yakov', name2 = 'stas')
+
+# 2 
+def dict_to_list(**my_dict):
+    for item in my_dict.items():
+        key, value = item # я разделил словарь на два элемента
+        if type(value) is int: # если значение словаря целове число, умножаю на два
+            value = value * 2
+        item = (key, value) # перевожу переменные в кортеж
+        print(item)
+
+info = dict_to_list(name = 'yakov', name2 = 'stas', price = 233, price2 = 218)
+
+
+###########################  Задача 2 ###################
+# Создайте функцию filter_list, которая будет фильтровать список
+# У функции должно быть два параметра - список и тип значения
+# Функциядолжна вернуть новый список, в котором останутся только значения
+# того типа, который был передан в вызове функции вторым аргументом
+# Функцию можно вызвать например так
+# filter_list([35, True, 'abc', 10], int) и получить [35, 10]
+
+# вторую задачу сделал, но не понял почему у меня true считается за целове число
+# может это особенность True 
+def filter_list(my_list, type_element):
+    for i in my_list:
+        if type_element is int and isinstance(i, int):
+           print(i)
+        if type_element is str and isinstance(i, str):
+          print(i)
+
+info = filter_list([35, 'True', True, 'abc', 10], int)
+
+
+# решение задачи 2 без цикла, а с помощью функции filter
+# в его решение True тоже число 
+def filter_list(list_to_filter, value_type):
+  def check_element_type(elem):
+    return isinstance(elem, value_type)
+  
+  return list(filter(check_element_type, list_to_filter))
+
+res = filter_list([1,10, 'abc', 5.5, True], int)
+print(res)
+
+## использование лямда функции - пример на задаче
+
+def filter_list(list_to_filter, value_type):
+  return list(filter(lambda elem:type(elem) is value_type, list_to_filter))
+
+res = filter_list([1,10, 'abc', 5.5, True], int)
+print(res)
