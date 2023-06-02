@@ -193,3 +193,126 @@ my_list = [ 'hello','my', 'friend', 'my', 'name', 'jac']
 
 up_list = [ num for num in my_list if len(num) > 3]
 print(up_list)
+
+############################# ГЕНЕРАТОРЫ №№№№№№№№№;#################################################
+
+# Генераторы в For In
+
+nums = (3, 5, 10)
+
+squares = ( num * num for num in nums) # это не кортеж
+
+print(squares)
+# <generator object <genexpr> at 0x0000013053A845F0>
+print(type(squares))
+# <class 'generator'>
+
+# еще пример#################################################################################
+
+squares = (num * num for num in range(6))
+
+print(squares)
+# <generator object <genexpr> at 0x0000019BFF174450> 
+
+print(type(squares))
+# <class 'generator'>
+
+for num in squares:
+    print(num)
+# 0
+# 1
+# 4
+# 9
+# 16
+# 25
+
+# конвертация генератора в список#################################################################################
+
+nums = [3, 5, 10]
+
+gen = ( num * num for num in nums) # генератор можно перевести в список
+squares = list(gen)
+
+print(squares)
+# [9, 25, 100]
+print(type(squares))
+# <class 'list'>
+
+###########################################################################################################################
+
+
+
+# главное преимущество генератора это размер 
+from sys import getsizeof
+
+squares_gen = (num * num for num in range(1000000)) # при увеличение генератора 
+# он в размере сильно не увеличивается  в отличие от списка
+
+print(getsizeof(squares_gen))
+# 208 # РАЗМЕР генератора
+
+print(type(squares_gen))
+# генератор
+# получить данные из генератора определенной ячейки
+# если был бы список, можно elem[100]
+for elem in squares_gen:
+    print(elem)
+    if elem == 100:
+        break
+squares_list = [num * num for num in range(1000000)]
+
+print(getsizeof(squares_list))
+# 8448728 размер списка
+print(type(squares_list))
+# класс лист
+
+			#  38 классы и объекты
+			
+# Создаем свой класс и вызываем его 
+
+# класс
+
+class Car: # при создания класса начинаем с большой буквы
+    def move(self):# указание на определенный экземпляр 
+        # move вызывается 
+        print("Car is moving") 
+    def stop(self):
+        print("Car stopped")
+
+my_car = Car() 
+print(type(my_car))  # <class '__main__.Car'>
+
+print(isinstance(my_car, Car)) #True
+
+my_car.move() # Car is moving
+my_car.stop() # Car stopped
+
+## Создание класса с методом
+### __init__
+
+# telegram_bot
+
+class Comment:
+    def __init__(self, text):  # функция конструктор при создание нового эксземпляра
+        self.text = text
+        self.votes_qty = 0
+
+    def upvote(self, qty):
+        self.votes_qty += qty
+
+    def reset_votes_qty(self):
+        self.votes_qty = 0  # c помощью этого метода можно обнулить переменную
+
+
+my_comment = Comment("My comment")
+print(my_comment.text)  # First comment
+print(my_comment.votes_qty)  # 0
+
+my_comment.upvote(5)
+print(my_comment.votes_qty)  # 5
+my_comment.upvote(10)
+print(my_comment.votes_qty)  # 10
+
+my_comment.reset_votes_qty()
+print(my_comment.votes_qty) # 0
+
