@@ -290,14 +290,13 @@ my_car.stop() # Car stopped
 ## Создание класса с методом
 ### __init__
 
-# telegram_bot
 
 class Comment:
     def __init__(self, text):  # функция конструктор при создание нового эксземпляра
-        self.text = text
-        self.votes_qty = 0
+        self.text = text # это атрибут
+        self.votes_qty = 0 # это атрибут
 
-    def upvote(self, qty):
+    def upvote(self, qty): # а это метод 
         self.votes_qty += qty
 
     def reset_votes_qty(self):
@@ -316,3 +315,14 @@ print(my_comment.votes_qty)  # 10
 my_comment.reset_votes_qty()
 print(my_comment.votes_qty) # 0
 
+
+####### Задача ########## 
+
+#1. Создайте класс Image 
+#2. Каждого экземпляра класса image должно быть три собственных атрибута 
+-  resolution 
+- title 
+- extensoion
+#3. В классе должен быть метод resize, с помощью которого можно поменять разрешение 
+#   изображенияю Вы должны просто поменять значение атрибута resolution
+#4. Создайте несколько экземпляров класса image и вызовите метод resize 
