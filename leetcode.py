@@ -230,3 +230,110 @@ print(num)
 Объяснение: У студента было менее 2 отсутствий и он никогда не опаздывал 3 или более дней подряд.
 
 # так, я так понимаю надо посимвольно разделить строку, пока посмотрю решение 
+# Задачуц решил. но не смог ее сделать в vscoded
+class Solution:
+    def checkRecord(self, s: str) -> bool:
+
+        l_cnt = 0 # сколько он опаздывал
+        a_cnt = 0 # проверка на опоздание 
+
+        for c in s: # c - correcter
+            if c == 'A':
+                a_cnt += 1
+                if a_cnt == 2:
+                    return False
+            if c =='L':
+                l_cnt += 1
+                if l_cnt > 2:
+                    return False
+            else:
+               l_cnt = 0
+        
+        return True
+
+s = "PPALLP"
+
+
+## решение в одну строку, отсуствол менее чем два раза и ни разу не опоздал
+return s.count('A') < 2 and s.count('LLL') == 0
+
+##### ######## След задача Binary Tree 145
+################# задачи на дерево, просто пройтист по дереву
+
+Учитывая корень двоичного дерева, вернуться в обратном порядке обхода значений его узлов.
+
+Input: root = [1,null,2,3]
+Output: [3,2,1]
+
+Input: root = []
+Output: []
+
+# используем поиск в глубину
+
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        
+        ans = []
+
+        def helper(node): # что за node 
+            if node: # только если node не none 
+                helper(node.left)
+                helper(node.right)
+                ans.append(node.val)
+        helper(root)
+
+        return ans # надо посмотреть про поиск в глубину
+
+### След задача  Стековая   392
+
+Учитывая две строки s и t, верните true, если s является подпоследовательностью t, или false в противном случае.
+
+Подпоследовательность строки - это новая строка, которая формируется из исходной строки путем удаления некоторых
+ (может не быть ни одного) символов без нарушения относительного положения оставшихся символов.
+  (т.е. "ace" является подпоследовательностью "abcde", в то время как "aec" - нет).
+(i.e., "ace" is a subsequence of "abcde" while "aec" is not).
+Input: s = "abc", t = "ahbgdc"
+Output: true
+
+Input: s = "axc", t = "ahbgdc"
+Output: false
+ # nj;t не понял задачу
+
+    class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+
+        stack = list(s)[::-1] # перевернул лист значений, который нам выдали
+
+        for c in t:
+ 
+            if stack and stack[-1] == c: # 
+                stack.pop() #  pop удаляет верхний элемент стека (т. е. последний элемент в списке) и возвращает его. В этом коде он используется для удаления символа из стека, если он совпадает с текущим символом 
+        
+        return len(stack) == 0 # . return len(stack) == 0 проверяет, пуст ли стек (т. е. равна ли его длина 0), и возвращает True, если это так
+
+
+# еще вариант решения
+
+    class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        stack = list(s)
+
+        for i in range(len(t)-1,-1,-1): 
+
+            if stack and stack[-1] == t[i]
+                stack.pop()
+        return True if not stack else False
+
+######### След задача 101  1 - 55, решение писать не хочу. слишком сложно 
+
+Учитывая корень двоичного дерева, проверьте, является ли оно зеркалом самого себя (т.е. симметричным вокруг своего центра).
+
+Input: root = [1,2,2,3,4,4,3]
+Output: true
+
+Input: root = [1,2,2,null,3,null,3]
+Output: false
+
+# довольно таки сложная
+# решается методом bfs 
+# 2:10
