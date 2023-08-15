@@ -7,4 +7,8 @@ ca192593-5179-41f5-be98-e1e2427fb9e0
 {4,"_$Session$_.Authentication",1},
 {13,1,1},
 {4,"_$Session$_.Start",2},
-{4,"_$Session$_.Finish",3}
+{4,"_$Session$_.Finish",3},
+{4,"_$InfoBase$_.ConfigUpdate",4},
+{4,"_$InfoBase$_.DBConfigUpdateStart",5},
+{4,"_$InfoBase$_.DBConfigUpdate",6},
+{3,"1CV8C",2}
