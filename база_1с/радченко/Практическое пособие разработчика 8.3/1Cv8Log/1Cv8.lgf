@@ -11,4 +11,11 @@ ca192593-5179-41f5-be98-e1e2427fb9e0
 {4,"_$InfoBase$_.ConfigUpdate",4},
 {4,"_$InfoBase$_.DBConfigUpdateStart",5},
 {4,"_$InfoBase$_.DBConfigUpdate",6},
-{3,"1CV8C",2}
+{3,"1CV8C",2},
+{4,"_$InfoBase$_.PredefinedDataUpdate",7},
+{5,ce8055be-8709-4619-bedc-963c40042211,"",1},
+{4,"_$Transaction$_.Begin",8},
+{4,"_$Data$_.New",9},
+{5,ce8055be-8709-4619-bedc-963c40042211,"Справочник.Товары",1},
+{4,"_$Transaction$_.Commit",10},
+{3,"BackgroundJob",3}
