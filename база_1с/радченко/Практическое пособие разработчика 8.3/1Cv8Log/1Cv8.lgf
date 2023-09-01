@@ -36,4 +36,6 @@ ca192593-5179-41f5-be98-e1e2427fb9e0
 {5,240b67d7-03e9-4a57-9632-86b5ed9d2dd8,"Документ.ОказаниеУслуги",7},
 {5,feb6912e-83f1-48d4-96d2-d05fbc0b1511,"РегистрСведений.Цены",8},
 {4,"_$InfoBase$_.DBConfigUpdateError",16},
-{4,"_$PerformError$_",17}
+{4,"_$PerformError$_",17},
+{4,"_$InfoBase$_.DumpStart",18},
+{4,"_$InfoBase$_.DumpFinish",19}
