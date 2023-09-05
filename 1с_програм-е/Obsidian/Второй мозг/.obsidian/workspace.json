@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "278f6ebae1e93893",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9d7aaf4a35c56cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca310df1d9e35dd4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ежедневные заметки/2023-09-05.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "078ae15fa2227d82",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f70b8f4776ca055",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7149632ab9b2af87",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "88e6983f20a46ba2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f6aee803b253707a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3527bb382b31e558",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e0432dd4238bfe6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e6231d41b66f5fb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ежедневные заметки/2023-09-05.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6463807cbb7d01be",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ежедневные заметки/2023-09-05.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5212aa1452d0f3f5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4463980b3c33d4d2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ежедневные заметки/2023-09-05.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "ca310df1d9e35dd4",
+  "lastOpenFiles": [
+    "База/Ansible.md",
+    "База/1C/Идея",
+    "База/1C/Вопросы по 1С",
+    "База/1C/Азы программирования в 1С 3 часа - 2",
+    "База/1C/Азы программирования в 1С 3 часа",
+    "База/1C/1-1.Основы программирования 1с.txt",
+    "База/1C/Три онлайн курса/1-3.Основы программирования 1с.txt",
+    "База/1C/Три онлайн курса/1-2.Основы программирования 1с.txt",
+    "База/1C/Три онлайн курса/1-1.Основы программирования 1с.txt",
+    "База/1C/Три онлайн курса",
+    "База/1C/Проработка 1С/Табличная часть - это коллекция",
+    "База/1C/Цель.md",
+    "База/1C/Советы.md",
+    "Шаблоны/Пошаговое выполнение работы по источнику.md",
+    "Шаблоны/Цель.md",
+    "Ежедневные заметки/2023-09-05.md",
+    "База/Сервер/Syncthing.md",
+    "База/Сервер/Mikrotik.md",
+    "База/Сервер/Создание сервера.md",
+    "База/Сервер/TSL_сертификат.md",
+    "База/Сервер/Debian.md",
+    "База/Сервер/Docker.md",
+    "База/[Syncthing.md",
+    "Шаблоны/Стандартный шаблон.md",
+    "База/1C/1С_Конфигурация.md",
+    "База/1C/Справочники.md",
+    "Файлы/Мой первый файл.md",
+    "База/1C/1С.md",
+    "База/1C/Книга Радченко М.Г., Хрусталева Е.Ю. - 1С Предприятие 8.3 Практическое пособие разработчика..md",
+    "База/1C/1C_Платформа.md",
+    "База/Zen-Zettelcaste.md",
+    "База/Без названия.md",
+    "Шаблоны/Человек.md",
+    "Ежедневные заметки/Без названия.md"
+  ]
+}
