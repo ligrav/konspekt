@@ -16,4 +16,14 @@ c4419b61-f270-4ef7-9f09-5dee4193c99e
 {4,"_$InfoBase$_.DBConfigUpdate",8},
 {3,"BackgroundJob",3},
 {3,"1CV8",4},
-{4,"_$PerformError$_",9}
+{4,"_$PerformError$_",9},
+{4,"_$Transaction$_.Begin",10},
+{4,"_$Data$_.New",11},
+{5,3a481469-d431-4486-ab67-5942019bba64,"Документ.ПриходнаяНакладная",1},
+{4,"_$Transaction$_.Commit",12},
+{4,"_$Data$_.Update",13},
+{4,"_$Data$_.Post",14},
+{5,91b76afc-5d36-41da-8ff3-95f8e80df723,"Документ.РасходнаяНакладная",2},
+{4,"_$InfoBase$_.PredefinedDataUpdate",15},
+{5,44d3d41e-7fc9-4a6c-b792-f1c2578c83a7,"",3},
+{5,44d3d41e-7fc9-4a6c-b792-f1c2578c83a7,"Справочник.Склады",3}
