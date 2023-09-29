@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e3b59bff7b6c88e8",
+            "id": "5885345a7c0de888",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ежедневные заметки/2023-09-28.md",
+                "file": "Ежедневные заметки/2023-09-29.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ежедневные заметки/2023-09-28.md",
+                "file": "Ежедневные заметки/2023-09-29.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ежедневные заметки/2023-09-28.md",
+                "file": "Ежедневные заметки/2023-09-29.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ежедневные заметки/2023-09-28.md"
+                "file": "Ежедневные заметки/2023-09-29.md"
               }
             }
           },
@@ -156,10 +156,11 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "e3b59bff7b6c88e8",
+  "active": "5885345a7c0de888",
   "lastOpenFiles": [
-    "Ежедневные заметки/2023-09-27.md",
     "Ежедневные заметки/2023-09-28.md",
+    "Ежедневные заметки/2023-09-29.md",
+    "Ежедневные заметки/2023-09-27.md",
     "Ежедневные заметки/2023-09-26.md",
     "Ежедневные заметки/2023-09-25.md",
     "Ежедневные заметки/2023-09-22.md",
@@ -192,7 +193,6 @@
     "Pasted image 20230915161447.png",
     "База/Сервер/Настройка серверов.md",
     "База/1C/Цель.md",
-    "Шаблоны/Ежедневные заметки.md",
     "Pasted image 20230915090818.png",
     "Файлы/Pasted image 20230911161519.png",
     "Файлы/Pasted image 20230906111919.png",

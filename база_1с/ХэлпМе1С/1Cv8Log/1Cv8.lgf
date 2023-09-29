@@ -1,5 +1,5 @@
 ﻿1CV8LOG(ver 2.0)
-83c8c27c-9e70-49d7-86e4-14d9567291a2
+363c0633-7963-4410-b3b1-023b0756a70b
 
 {1,071523a4-516f-4fce-ba4b-0d11ab7a1893,"",1},
 {2,"DESKTOP-NM6VJCT",1},
@@ -13,4 +13,12 @@
 {4,"_$InfoBase$_.DBConfigUpdateStart",5},
 {4,"_$InfoBase$_.DBConfigUpdate",6},
 {4,"_$PerformError$_",7},
-{3,"BackgroundJob",3}
+{3,"BackgroundJob",3},
+{4,"_$InfoBase$_.RestoreStart",8},
+{4,"_$InfoBase$_.RestoreFinish",9},
+{4,"_$Transaction$_.Begin",10},
+{4,"_$Data$_.New",11},
+{5,568feb4f-bb65-41c4-8987-872432501c1c,"Справочник.Сотрудники",1},
+{4,"_$Transaction$_.Commit",12},
+{5,368caefc-0f10-4f8a-9c55-b4f2f18d2066,"Документ.ПриемНаРаботу",2},
+{4,"_$Data$_.Post",13}
