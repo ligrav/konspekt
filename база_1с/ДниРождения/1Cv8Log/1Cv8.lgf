@@ -1,5 +1,5 @@
 ﻿1CV8LOG(ver 2.0)
-7b457f38-7886-4550-bfad-8fb0d714b055
+71243ad3-df4f-44e3-9982-b272a911233f
 
 {1,071523a4-516f-4fce-ba4b-0d11ab7a1893,"",1},
 {2,"LAPTOP-5SSPR8EH",1},
@@ -10,13 +10,17 @@
 {4,"_$InfoBase$_.ConfigUpdate",3},
 {4,"_$InfoBase$_.DBConfigUpdateStart",4},
 {4,"_$InfoBase$_.PredefinedDataUpdate",5},
-{5,a30aeb36-79fe-492e-8cd6-adfe1c5f036c,"",1},
+{5,60ab0f88-4047-4d23-ab84-1d7c3b9a5fb4,"",1},
 {4,"_$InfoBase$_.DBConfigUpdate",6},
 {3,"1CV8C",2},
 {3,"BackgroundJob",3},
 {4,"_$Session$_.Finish",7},
 {4,"_$Transaction$_.Begin",8},
 {4,"_$Data$_.New",9},
-{5,a30aeb36-79fe-492e-8cd6-adfe1c5f036c,"Справочник.Слова",1},
+{5,60ab0f88-4047-4d23-ab84-1d7c3b9a5fb4,"Справочник.Люди",1},
 {4,"_$Transaction$_.Commit",10},
-{4,"_$PerformError$_",11}
+{4,"_$Data$_.Update",11},
+{5,4a2a27e3-040c-450d-942b-d0146c9667b4,"",2},
+{5,4a2a27e3-040c-450d-942b-d0146c9667b4,"Справочник.Связи",2},
+{5,3b9c95ca-8422-4092-967f-4266827c00c2,"",3},
+{5,3b9c95ca-8422-4092-967f-4266827c00c2,"Справочник.Подарки",3}
