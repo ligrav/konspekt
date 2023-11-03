@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5694f3124b0f7add",
+        "id": "7e4c5d031107e60d",
         "type": "tabs",
         "children": [
           {
-            "id": "6d900927dba02764",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "База/1C/Гастроном.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "91817be1c4938e10",
+            "id": "d57e96571af86e55",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,11 +156,11 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "91817be1c4938e10",
+  "active": "d57e96571af86e55",
   "lastOpenFiles": [
+    "База/1C/Гастроном.md",
     "Ежедневные заметки/2023-11-02.md",
     "Ежедневные заметки/2023-11-03.md",
-    "База/1C/Гастроном.md",
     "Pasted image 20231102130636.png",
     "Pasted image 20231102130611.png",
     "Ежедневные заметки/2023-11-01.md",
