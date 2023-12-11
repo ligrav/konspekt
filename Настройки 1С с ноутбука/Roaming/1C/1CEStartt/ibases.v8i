@@ -1,0 +1,102 @@
+﻿[За 3 часа Основы]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\За 3 часа Основы";
+ID=2719ceea-7ecf-467e-8427-4114471753ac
+OrderInList=16554.6666666667
+Folder=/3 часа
+OrderInTree=16384
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[Курс Основы программирования ]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\Курс Основы программирования";
+ID=c819be24-7834-4b78-8035-b6d2874bd9a2
+OrderInList=16384
+Folder=/
+OrderInTree=256
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[Запросы за 3ч]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\Запросы за 3 часа";
+ID=d649eadf-773b-4d38-8228-5421f82ae92c
+OrderInList=16469.3333333334
+Folder=/3 часа
+OrderInTree=32768
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[3 часа]
+ID=655d1f71-56e5-430c-a47d-310a514d6aba
+OrderInList=-1
+Folder=/
+OrderInTree=65792
+External=0
+[Барбершоп]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\Барбершоп";
+ID=8eb0a8ac-7105-45e9-a854-26b17eafd80a
+OrderInList=98474.6666666667
+Folder=/
+OrderInTree=66304
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[СпецПоПлатформе]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\СпецПоПлатформе";
+ID=9d7eeb7f-b9ae-4140-b509-8a8695536d60
+OrderInList=114858.666666667
+Folder=/
+OrderInTree=68949.3333333333
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[Азы]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\ХэлпМе1С";
+ID=98ae1232-d1e4-4972-a08a-cc99f1ea5aac
+OrderInList=49322.6666666667
+Folder=/
+OrderInTree=66048
+External=0
+ClientConnectionSpeed=Normal
+App=ThickClient
+WA=1
+[ДниРождения]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\ДниРождения";
+ID=d7607135-b59a-4efb-82ce-34f2b3e42cfa
+OrderInList=131242.666666667
+Folder=/
+OrderInTree=66176
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[Гастроном]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\Гастроном";
+ID=7d576236-da29-4eb3-8fae-36a333334a2c
+OrderInList=147626.666666667
+Folder=/
+OrderInTree=33216
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[13 занятий]
+Connect=File="C:\Users\Мистер\Desktop\изучение python\1C\konspekt\база_1с\13lesson";
+ID=22bf56fb-338c-45f9-be12-783b5eb1f4fc
+OrderInList=180394.666666667
+Folder=/Радченко
+OrderInTree=16384
+External=0
+ClientConnectionSpeed=Normal
+App=Auto
+WA=1
+[Радченко]
+ID=df223a70-1338-4fad-a4bc-a5acb703fa9f
+OrderInList=-1
+Folder=/
+OrderInTree=67434.6666666667
+External=0
