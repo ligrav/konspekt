@@ -4,18 +4,75 @@
     "type": "split",
     "children": [
       {
-        "id": "2138d4e412483d33",
-        "type": "tabs",
+        "id": "dc9dbeedb24e93b2",
+        "type": "split",
         "children": [
           {
-            "id": "e0fca0df6dbd8541",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
+            "id": "4a1e3d3954e066bc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "410c76101ec740d2",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Ежедневные заметки/2023-12-12.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "2138d4e412483d33",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "bcb82599f0363445",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "База/Занятие 2 - Основы программирования.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "e354ce746d2566c5",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "База/Ключевые горячие клавиши в 1С.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "18c05e63fc781c37",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "База/Синтакс-помошник.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -44,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "горяч",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +118,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ежедневные заметки/2023-12-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ежедневные заметки/2023-12-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +178,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ежедневные заметки/2023-12-12.md"
+              }
             }
           },
           {
@@ -148,43 +210,44 @@
       "templates:Вставить шаблон": false
     }
   },
-  "active": "e0fca0df6dbd8541",
+  "active": "410c76101ec740d2",
   "lastOpenFiles": [
+    "База/Занятие 2 - Основы программирования.md",
     "Ежедневные заметки/2023-12-12.md",
+    "База/1C/Курс IronSkills.md",
+    "База/Правильно называть переменные.md",
+    "Pasted image 20231212211622.png",
+    "База/Ключевые горячие клавиши в 1С.md",
+    "База/Вернутся к конфигурации БД.md",
+    "База/Синтакс-помошник.md",
+    "Pasted image 20231212210549.png",
+    "Pasted image 20231212210540.png",
+    "Pasted image 20231212210512.png",
+    "Pasted image 20231212210444.png",
+    "Pasted image 20231212210422.png",
+    "Pasted image 20231212210340.png",
+    "База/Инструкция или оператор.md",
+    "Pasted image 20231212203559.png",
+    "Pasted image 20231212203550.png",
     "База/Занятие 1 - Знакомство с Системой.md",
+    "Pasted image 20231212202941.png",
+    "База/Молдуль объекта.md",
+    "База/Модуль менеджера.md",
+    "База/Модуль внешнего соединения.md",
+    "База/Модуль сеанса.md",
+    "База/Модуль приложения.md",
     "База/Динамическое обновление.md",
     "База/Режим совместимость.md",
-    "Pasted image 20231212164310.png",
-    "База/Вернутся к конфигурации БД.md",
-    "Pasted image 20231212163414.png",
-    "Pasted image 20231212162556.png",
     "База/Типовая конфигурация.md",
     "База/Выгрузить конфигурацию без данных.md",
-    "Pasted image 20231212161737.png",
-    "Pasted image 20231212161547.png",
-    "Pasted image 20231212161537.png",
     "База/Конфигурация баз данных.md",
-    "Pasted image 20231212155555.png",
-    "Pasted image 20231212155529.png",
-    "Pasted image 20231212155519.png",
-    "Pasted image 20231212154747.png",
     "База/1C/1С_Конфигурация.md",
-    "База/Ключевые горячие клавиши в 1С.md",
     "База/Сохранение конфигурации.md",
     "Шаблоны/Человек.md",
     "Шаблоны/Стандартный шаблон.md",
     "Шаблоны/Ежедневные заметки.md",
     "Шаблоны/Цель.md",
     "Шаблоны/Пошаговое выполнение работы по источнику.md",
-    "База/Поиск в конфигураторе.md",
-    "База/Менять палитру свойства.md",
-    "База/1C/Использовать обычные формы в 1С конфигурации, а так же включить Консоль запросов.md",
-    "База/Окна в  конфигураторе.md",
-    "База/Шаблоны конфигураций.md",
-    "База/Ссылка для разных бесплатных версий платформ.md",
-    "База/1C/Курс IronSkills.md",
-    "База/как группировать базу и просматривать в виде дерева.md",
-    "База/Показывать последние выбранные информационные базы.md",
     "Без названия 1.canvas",
     "Без названия.canvas",
     "Остальное",
