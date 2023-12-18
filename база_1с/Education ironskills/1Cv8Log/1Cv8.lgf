@@ -12,4 +12,7 @@
 {13,2,1},
 {3,"1CV8C",2},
 {3,"BackgroundJob",3},
-{4,"_$PerformError$_",4}
+{4,"_$PerformError$_",4},
+{4,"_$InfoBase$_.ConfigUpdate",5},
+{4,"_$InfoBase$_.DBConfigUpdateStart",6},
+{4,"_$InfoBase$_.DBConfigUpdate",7}
