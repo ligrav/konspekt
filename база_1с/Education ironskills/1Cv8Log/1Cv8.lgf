@@ -16,4 +16,8 @@
 {4,"_$InfoBase$_.ConfigUpdate",5},
 {4,"_$InfoBase$_.DBConfigUpdateStart",6},
 {4,"_$InfoBase$_.DBConfigUpdate",7},
-{4,"_$InfoBase$_.DBConfigUpdateError",8}
+{4,"_$InfoBase$_.DBConfigUpdateError",8},
+{4,"_$Transaction$_.Begin",9},
+{4,"_$Data$_.Update",10},
+{5,c73f4fbe-8854-4d72-8256-5ba845abcdac,"Константа.ЗаголовокПрограммы",1},
+{4,"_$Transaction$_.Commit",11}
